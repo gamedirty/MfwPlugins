@@ -1,38 +1,39 @@
 <idea-plugin>
-  <id>com.sovnem.gamedirty.mfw</id>
-  <name>这是一个插件我是名字</name>
-  <version>1.0</version>
-  <vendor email="zhaojunhui@mafengwo.com" url="http://www.mafengwo.com">马蜂窝</vendor>
+    <id>com.sovnem.gamedirty.mfw</id>
+    <name>这是一个插件我是名字</name>
+    <version>1.0</version>
+    <vendor email="zhaojunhui@mafengwo.com" url="http://www.mafengwo.com">马蜂窝</vendor>
 
-  <description><![CDATA[
+    <description><![CDATA[
       Enter short description for your plugin here.<br>
       <em>most HTML tags may be used</em>
     ]]></description>
 
-  <change-notes><![CDATA[
+    <change-notes><![CDATA[
       Add change notes here.<br>
       <em>most HTML tags may be used</em>
     ]]>
-  </change-notes>
+    </change-notes>
 
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="173.0"/>
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
 
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
-  -->
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
 
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-  </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
 
-  <actions>
-    <!-- Add your actions here -->
-    <action id="MfwPlugin.HuiAction" class="com.mafengwo.zhjh.HuiAction" text="干滴啊啥呢" description="这是描述啦啦啦啦">
-      <add-to-group group-id="EditMenu" anchor="last"/>
-    </action>
-  </actions>
-
+    <actions>
+        <!-- Add your actions here -->
+        <group id="MFWPlugin.MainMenu" text="MFWMenu" description="马蜂窝独有的插件啊哈哈哈哈哈">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="MFWPlugin.OneAction" class="com.mafengwo.zhjh.OneAction" text="马蜂窝的第一个功能"
+                    description="我是马蜂窝的第一个功能哈哈哈哈"/>
+        </group>
+    </actions>
 </idea-plugin>
