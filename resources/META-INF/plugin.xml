@@ -1,8 +1,8 @@
 <idea-plugin>
-  <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <id>com.sovnem.gamedirty.mfw</id>
+  <name>这是一个插件我是名字</name>
   <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="zhaojunhui@mafengwo.com" url="http://www.mafengwo.com">马蜂窝</vendor>
 
   <description><![CDATA[
       Enter short description for your plugin here.<br>
@@ -30,6 +30,9 @@
 
   <actions>
     <!-- Add your actions here -->
+    <action id="MfwPlugin.HuiAction" class="com.mafengwo.zhjh.HuiAction" text="干滴啊啥呢" description="这是描述啦啦啦啦">
+      <add-to-group group-id="EditMenu" anchor="last"/>
+    </action>
   </actions>
 
 </idea-plugin>
