@@ -32,8 +32,14 @@
         <!-- Add your actions here -->
         <group id="MFWPlugin.MainMenu" text="MFWMenu" description="马蜂窝独有的插件啊哈哈哈哈哈">
             <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="MFWPlugin.OneAction" class="com.mafengwo.zhjh.OneAction" text="马蜂窝的第一个功能"
+            <action id="MFWPlugin.OneAction" class="com.mafengwo.zhjh.actions.OneAction" text="第一个功能"
                     description="我是马蜂窝的第一个功能哈哈哈哈"/>
+            <action id="Mfw.TwoAction" class="com.mafengwo.zhjh.actions.ChooseFileAction" text="第二个功能" description="我是第二个功能"/>
         </group>
+
+        <action id="rightButtonAction" class="com.mafengwo.zhjh.actions.RightButtonTest" text="右键菜单"
+                description="我是右键菜单">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="after" relative-to-action="ReplaceInPath"/>
+        </action>
     </actions>
 </idea-plugin>
